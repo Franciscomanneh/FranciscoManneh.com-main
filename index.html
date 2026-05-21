@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Manneh | Full Stack Developer & Digital Architect in The Gambia</title>
+    <meta name="description" content="Engineering high-performance web ecosystems, responsive business applications, and AI-driven automation systems. Professional web development with a focus on conversion and scale.">
+    <link rel="canonical" href="https://franciscomanneh.com">
+    <link rel="icon" type="image/png" href="Favicon/3-removebg-preview.png">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://franciscomanneh.com">
+    <meta property="og:title" content="Francisco Manneh | Full Stack Developer & Digital Architect">
+    <meta property="og:description" content="Engineering high-performance web applications and AI-driven automation systems. View my projects and designs.">
+    <meta property="og:image" content="https://franciscomanneh.com/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://franciscomanneh.com">
+    <meta property="twitter:title" content="Francisco Manneh | Digital Architect">
+    <meta property="twitter:description" content="Building scalable web ecosystems and intelligent business applications.">
+    <meta property="twitter:image" content="https://franciscomanneh.com/og-image.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' media="print"
+        onload="this.media='all'">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Francisco Manneh",
+      "jobTitle": "Full Stack Developer",
+      "url": "https://franciscomanneh.com",
+      "image": "https://franciscomanneh.com/persionalpictures/Screenshot%202026-01-26%20074447.png",
+      "sameAs": [
+        "https://github.com/Franciscomanneh",
+        "https://www.youtube.com/@codewithfrancisco-1",
+        "https://www.tiktok.com/@fmannehcode"
+      ],
+      "description": "Full Stack Developer specializing in responsive web development and AI applications in The Gambia.",
+      "knowsAbout": ["Web Development", "UI/UX Design", "AI Automation", "React", "Node.js"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "F. Manneh Studio"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Francisco Manneh Portfolio",
+      "url": "https://franciscomanneh.com",
+      "description": "Professional portfolio of Francisco Manneh, a Digital Architect specializing in web ecosystems."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "CreativeWork",
+          "position": 1,
+          "name": "Retail E-Commerce Ecosystem",
+          "description": "A high-performance web application featuring dynamic filtering and secure checkout.",
+          "url": "https://franciscomanneh.github.io/multipurpose/"
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 2,
+          "name": "AI Consultation System",
+          "description": "An intelligent state-driven advisory chatbot built with React and OpenAI.",
+          "url": "https://consultation-chat.vercel.app/"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Initializing Portfolio...</div>
+    </div>
+
+    <!-- Top Navigation (Desktop) -->
+    <header class="top-nav glass-nav">
+        <a href="#home" class="logo">
+            <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img">
+        </a>
+        <nav class="desktop-links">
+            <a href="#home" class="nav-link" aria-label="Navigate to home section">Home</a>
+            <a href="#services" class="nav-link" aria-label="Navigate to services section">Services</a>
+            <a href="designs.html" class="nav-link" aria-label="View design showcase">Designs</a>
+            <a href="#cv" class="nav-link" aria-label="View resume">CV</a>
+            <a href="#projects" class="nav-link" aria-label="Navigate to projects section">Work</a>
+            <a href="#contact" class="nav-link" aria-label="Navigate to contact section">Contact</a>
+        </nav>
+        <div class="desktop-actions">
+            <!-- Hamburger Menu Trigger -->
+            <button class="hamburger-btn" aria-label="Toggle Menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <a href="#contact" class="btn btn-primary compact-btn">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Overlay Navigation (Hamburger Menu) -->
+    <div class="overlay-nav glass-overlay">
+        <div class="overlay-header">
+            <a href="#home" class="logo">
+                <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img">
+            </a>
+            <button class="close-overlay-btn"><i class='bx bx-x'></i></button>
+        </div>
+        <nav class="overlay-links">
+            <a href="#home" class="overlay-link" aria-label="Navigate to home"><i class='bx bx-home-alt-2'></i> Home</a>
+            <a href="#services" class="overlay-link" aria-label="Navigate to services"><i class='bx bx-layer'></i>
+                Services</a>
+            <a href="designs.html" class="overlay-link" aria-label="View design showcase"><i class='bx bx-paint'></i>
+                Designs</a>
+            <a href="#cv" class="overlay-link" aria-label="View resume"><i class='bx bx-file'></i>
+                CV / Resume</a>
+            <a href="#projects" class="overlay-link" aria-label="Navigate to projects"><i
+                    class='bx bx-briefcase-alt-2'></i> Work</a>
+            <a href="#about" class="overlay-link" aria-label="Navigate to about"><i class='bx bx-user'></i> About</a>
+            <a href="#contact" class="overlay-link" aria-label="Navigate to contact"><i class='bx bx-envelope'></i>
+                Contact</a>
+        </nav>
+        <div class="overlay-footer">
+            <p>Let's build something amazing.</p>
+            <div class="social-links">
+                <a href="https://github.com/Franciscomanneh"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.youtube.com/@codewithfrancisco-1"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav glass-nav" aria-label="Mobile navigation">
+        <a href="#home" class="bottom-nav-item active" aria-label="Home">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Home</span>
+        </a>
+        <a href="designs.html" class="bottom-nav-item" aria-label="Designs">
+            <i class='bx bx-paint'></i>
+            <span>Designs</span>
+        </a>
+        <a href="#cv" class="bottom-nav-item" aria-label="CV">
+            <i class='bx bx-file'></i>
+            <span>CV</span>
+        </a>
+        <a href="#projects" class="bottom-nav-item" aria-label="Projects">
+            <i class='bx bx-briefcase-alt-2'></i>
+            <span>Work</span>
+        </a>
+        <a href="#contact" class="bottom-nav-item" aria-label="Contact">
+            <i class='bx bx-envelope'></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2203137203" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-label-wrapper">
+                        <span class="hero-badge"><i class='bx bx-zap'></i> Web • AI • Apps</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Crafting <span class="gradient-text gradient-primary">Ecosystems</span> <br>
+                        That Scale Your <span class="text-underline">Vision</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I engineer high-performance web architectures, intelligent AI automations, and mobile experiences tailored for the next generation of digital giants.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary lg-btn tap-effect">
+                            Explore My Work <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                        <a href="#contact" class="btn btn-glass lg-btn tap-effect">
+                            Start a Project
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <a href="https://share.google/OhTxhMrEWbVpeFhVj" target="_blank" class="google-rating-card glass-card tap-effect">
+                            <div class="google-logo">
+                                <i class='bx bxl-google'></i>
+                            </div>
+                            <div class="rating-info">
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                                <p class="rating-text"><span>5.0 Rating</span> based on 50+ reviews</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Hero Image/Animation -->
+                <div class="hero-visual reveal" style="transition-delay: 0.3s">
+                    <div class="visual-container">
+                        <div class="main-visual-orb"></div>
+                        <div class="floating-tech-nodes">
+                            <div class="node n1"><i class='bx bx-code-alt'></i></div>
+                            <div class="node n2"><i class='bx bx-brain'></i></div>
+                            <div class="node n3"><i class='bx bx-mobile-alt'></i></div>
+                        </div>
+                        <div class="stats-glass-card">
+                            <div class="pulse-indicator"></div>
+                            <span>System Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Service <span class="gradient-text gradient-secondary">Expertise</span>
+                    </h2>
+                    <p class="section-desc">Technical solutions tailored for modern business growth and digital stability.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card tap-effect reveal">
+                        <div class="service-icon"><i class='bx bx-code-alt'></i></div>
+                        <h3>Web Development</h3>
+                        <p>High performance, SEO optimized, and lightning fast web architectures built for scale.</p>
+                        <div class="tech-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Next.js</span>
+                        </div>
+                        <button class="btn-text learn-more-btn" data-service="web">Learn More <i
+                                class='bx bx-right-arrow-alt'></i></button>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card tap-effect reveal" style="transition-delay: 0.1s">
+                        <div class="service-icon"><i class='bx bx-mobile-alt'></i></div>
+                        <h3>App Development</h3>
+                        <p>Fluid, native grade mobile experiences from conceptual UI to robust backend operations.</p>
+                        <div class="tech-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <button class="btn-text learn-more-btn" data-service="app">Learn More <i
+                                class='bx bx-right-arrow-alt'></i></button>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card tap-effect reveal" style="transition-delay: 0.2s">
+                        <div class="service-icon"><i class='bx bx-bot'></i></div>
+                        <h3>AI Chatbots & Automation</h3>
+                        <p>Intelligent workflows and consultative bots that automate operations 24/7 with human like
+                            accuracy.</p>
+                        <div class="tech-tags">
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <button class="btn-text learn-more-btn" data-service="ai">Learn More <i
+                                class='bx bx-right-arrow-alt'></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project Section -->
+        <section id="featured-project" class="section featured-project">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">🚀 Featured <span class="gradient-text gradient-primary">Project</span>
+                    </h2>
+                    <p class="section-desc">Showcasing my latest startup product currently in active development.</p>
+                </div>
+
+                <div class="featured-project-container glass-card reveal">
+                    <div class="featured-image-wrapper">
+                        <span class="badge in-progress-badge">🚧 In Progress</span>
+                        <!-- Replace with real mockup of the NdugaMa app. Using generic project placeholder. -->
+                        <img src="./designs/business designs/futured project.png" alt="NdugaMa App Mockup" class="featured-img" loading="lazy"
+                            decoding="async">
+                    </div>
+
+                    <div class="featured-content">
+                        <h3 class="featured-title">NdugaMa Digital Market Platform</h3>
+                        <p class="featured-desc">A smart digital platform that allows users to order market items from
+                            local vendors without physically going to the market.</p>
+
+                        <ul class="featured-features">
+                            <li><i class='bx bx-cart-alt'></i> Browse daily market products</li>
+                            <li><i class='bx bx-list-check'></i> Create a custom shopping list</li>
+                            <li><i class='bx bxl-whatsapp'></i> Order via WhatsApp</li>
+                            <li><i class='bx bx-run'></i> Market runner delivery system</li>
+                        </ul>
+
+                        <div class="featured-tech-stack">
+                            <span class="tech-small"><i class='bx bx-code-alt'></i> HTML, CSS, JavaScript, Google
+                                Sheets, WhatsApp Integration</span>
+                        </div>
+
+                        <div class="featured-actions" style="margin-bottom: 2rem;">
+                            <button class="btn btn-primary lg-btn tap-effect btn-block-mobile" id="subscribeBtn">Subscribe for Launch <i
+                                    class='bx bx-bell'></i></button>
+                            <div class="like-interaction">
+                                <button id="likeProjectBtn" class="like-btn">
+                                    <i class='bx bx-heart' id="likeIcon"></i>
+                                </button>
+                                <span id="likeCountDisplay" class="like-count">300</span>
+                                <span class="like-label">People like this project</span>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Review Section -->
+                        <div class="featured-reviews glass-card">
+                            <h4 class="reviews-title">Community Feedback</h4>
+                            <div class="review-input-group">
+                                <input type="text" id="reviewInput" placeholder="Add a short review..." maxlength="100">
+                                <button id="submitReviewBtn" class="review-submit-btn"><i class='bx bx-send'></i></button>
+                            </div>
+                            <div id="reviewsList" class="reviews-list">
+                                <!-- Comments will be injected here -->
+                                <div class="empty-reviews">Be the first to leave a review!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="projects-header-grid reveal">
+                    <div class="projects-header-left">
+                        <span class="badge glass-badge" style="margin-bottom: 1rem;">Portfolio Showcase</span>
+                        <h2 class="section-title">My Projects & <span class="gradient-text gradient-primary">Case Studies</span></h2>
+                        <p class="section-desc" style="max-width: none; margin-left: 0; margin-right: 0;">
+                            Real solutions engineered for real-world impact. Each project represents a unique challenge solved with precision, performance, and purpose.
+                        </p>
+                        
+                        <div class="projects-quick-stats">
+                            <div class="quick-stat">
+                                <span class="q-num">30+</span>
+                                <span class="q-label">Projects Completed</span>
+                            </div>
+                            <div class="quick-stat">
+                                <span class="q-num">5+</span>
+                                <span class="q-label">Years Experience</span>
+                            </div>
+                            <div class="quick-stat">
+                                <span class="q-num">100%</span>
+                                <span class="q-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-header-right">
+                        <div class="diagram-container">
+                            <div class="diagram-node main">Engineering</div>
+                            <div class="diagram-node n1">Strategy</div>
+                            <div class="diagram-node n2">Design</div>
+                            <div class="diagram-node n3">Deploy</div>
+                            <div class="diagram-line l1"></div>
+                            <div class="diagram-line l2"></div>
+                            <div class="diagram-line l3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card reveal">
+                        <div class="project-image-wrapper">
+                            <img src="./Images/14.png" alt="E-Commerce Website" class="project-img" width="600"
+                                height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://franciscomanneh.github.io/multipurpose/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Retail E-Commerce Ecosystem</h3>
+                            <p>A comprehensive web application designed for high-volume transactions, featuring dynamic product filtering and a streamlined checkout experience.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card reveal" style="transition-delay: 0.1s">
+                        <div class="project-image-wrapper">
+                            <img src="./Images/1.png" alt="Snake Game App" class="project-img" width="600" height="337"
+                                loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://snake-game-six-ruby.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Logic & State Simulation</h3>
+                            <p>An interactive environment demonstrating real-time coordination and advanced state management within a fluid 60FPS browser context.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Canvas API</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Vercel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card reveal" style="transition-delay: 0.2s">
+                        <div class="project-image-wrapper">
+                            <img src="./Images/7.png" alt="AI Chatbot" class="project-img" width="600" height="337"
+                                loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://consultation-chat.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Consultation System</h3>
+                            <p>An intelligent chatbot designed to provide expert-level advisory by processing complex user inputs through state-driven response logic.</p>
+                            <div class="tech-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">OpenAI</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- View All Projects Button -->
+                <div class="view-all-projects reveal" style="transition-delay: 0.3s">
+                    <a href="projects.html" class="btn btn-primary lg-btn tap-effect">
+                        View All Projects <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <div class="image-glass-frame">
+                            <img src="./persionalpictures/Screenshot 2026-01-26 074447.png"
+                                alt="Francisco Manneh - Full Stack Developer Portrait" class="img-fluid" width="400"
+                                height="400" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    
+                    <div class="about-content reveal" style="transition-delay: 0.2s">
+                        <span class="badge glass-badge">Francisco Manneh</span>
+                        <h2 class="section-title">Full Stack <span class="gradient-text gradient-primary">Developer</span></h2>
+                        <p>I specialize in bridging the gap between business vision and technical reality. I build digital assets that are fast, accessible, and scalable to ensure your investment drives measurable results.</p>
+
+                        <div class="stats-grid">
+                            <div class="stat-box glass-card">
+                                <h3>5+</h3>
+                                <span>Years Exp.</span>
+                            </div>
+                            <div class="stat-box glass-card">
+                                <h3>30+</h3>
+                                <span>Projects</span>
+                            </div>
+                            <div class="stat-box glass-card">
+                                <h3>100+</h3>
+                                <span>Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section cv">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Professional <span class="gradient-text gradient-primary">Resume</span></h2>
+                    <p class="section-desc">A comprehensive overview of my technical expertise and professional journey.</p>
+                </div>
+
+                <div class="cv-container glass-card reveal">
+                    <div class="cv-grid">
+                        <div class="cv-main">
+                            <div class="cv-block">
+                                <h3 class="cv-sub-title"><i class='bx bx-user-circle'></i> Professional Summary</h3>
+                                <p>Versatile Full Stack Developer with over 5 years of experience in engineering high-performance web ecosystems, mobile applications, and AI-driven automations. Proven track record of delivering scalable solutions that bridge the gap between complex business logic and intuitive user experiences.</p>
+                            </div>
+
+                            <div class="cv-block">
+                                <h3 class="cv-sub-title"><i class='bx bx-briefcase'></i> Experience Highlights</h3>
+                                <div class="experience-item">
+                                    <div class="exp-header">
+                                        <h4>Senior Digital Architect</h4>
+                                        <span class="exp-date">2022 - Present</span>
+                                    </div>
+                                    <p class="exp-company">Freelance | Digital Studio</p>
+                                    <ul class="exp-tasks">
+                                        <li>Architected and deployed 30+ web and mobile applications for global clients.</li>
+                                        <li>Integrated AI chatbots and automation workflows reducing operational overhead by 40%.</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-item">
+                                    <div class="exp-header">
+                                        <h4>Full Stack Developer Instructor</h4>
+                                        <span class="exp-date">2021 - 2023</span>
+                                    </div>
+                                    <p class="exp-company">MDI & Independent Workshops</p>
+                                    <ul class="exp-tasks">
+                                        <li>Mentored over 100 students in modern web development stacks (React, Node.js).</li>
+                                        <li>Designed project-based curriculum focusing on HTML, CSS, and JavaScript.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv-sidebar">
+                            <div class="cv-block">
+                                <h3 class="cv-sub-title"><i class='bx bx-code-block'></i> Technical Skills</h3>
+                                <div class="skills-list">
+                                    <div class="skill-category">
+                                        <h5>Frontend</h5>
+                                        <p>React, Next.js, HTML5, CSS3, Tailwind, JavaScript (ES6+), Glide (No-Code App Dev)</p>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h5>Backend</h5>
+                                        <p>Node.js, Express, Python, Firebase, PostgreSQL</p>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h5>Tools & Automation</h5>
+                                        <p>Git, Docker, OpenAI API, LangChain, Vercel, Moqups (UI/UX Design)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cv-block">
+                                <h3 class="cv-sub-title"><i class='bx bx-book-open'></i> Education & Certifications</h3>
+                                <div class="education-item">
+                                    <h4>Computer Science</h4>
+                                    <p>Management Development Institute (MDI)</p>
+                                </div>
+                                <div class="education-item" style="margin-top: 1rem;">
+                                    <h4>Project-Based Certificates</h4>
+                                    <p>Coursera | Specialized Training</p>
+                                    <ul style="font-size: 0.85rem; color: var(--text-muted); list-style: none; margin-top: 0.5rem; padding-left: 0;">
+                                        <li><i class='bx bx-check-circle' style="color: var(--secondary);"></i> Mobile App Dev with Glide</li>
+                                        <li><i class='bx bx-check-circle' style="color: var(--secondary);"></i> Mobile UI Design with Moqups</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cv-actions">
+                                <a href="https://drive.google.com/file/d/1Yc8aWxqcx1wOpEDlS6IDI17F_fNH14KO/view?usp=sharing" target="_blank" class="btn btn-primary btn-block-mobile">
+                                    <i class='bx bx-show'></i> View Full CV
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section testimonials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Client <span class="gradient-text gradient-secondary">Feedback</span></h2>
+                    <p class="section-desc">Real words from real students and partners.</p>
+                </div>
+
+                <div class="testimonial-slider glass-card reveal">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Card 1 -->
+                        <div class="testi-card">
+                            <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                            <p class="quote">"His knowledge and teaching style are truly impressive he explains
+                                complex concepts in a simple, relatable way. Highly recommend!"</p>
+                            <div class="author">
+                                <img src="./persionalpictures/alagi.png" alt="Alagi Saho - Student Testimonial"
+                                    width="50" height="50" loading="lazy" decoding="async">
+                                <div class="author-info">
+                                    <h4>Alagi Saho</h4>
+                                    <span>Student, MDI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="testi-card">
+                            <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                            <p class="quote">"His unique teaching style, passion for technology, and deep understanding
+                                of the field opened my eyes to new possibilities."</p>
+                            <div class="author">
+                                <img src="./persionalpictures/nata.png" alt="Nathaniel Boima - Student Testimonial"
+                                    width="50" height="50" loading="lazy" decoding="async">
+                                <div class="author-info">
+                                    <h4>Nathaniel Boima</h4>
+                                    <span>Student, MDI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="testi-card">
+                            <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                            <p class="quote">"Francisco delivered a solution that perfectly captured our brand. Their
+                                strategic approach boosted our client engagement significantly."</p>
+                            <div class="author">
+                                <img src="./persionalpictures/konko.png" alt="Modoulamin Fatajo - CEO Konko Group"
+                                    width="50" height="50" loading="lazy" decoding="async">
+                                <div class="author-info">
+                                    <h4>Modoulamin Fatajo</h4>
+                                    <span>CEO, Konko Group</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container container-sm">
+                <div class="contact-box glass-card reveal">
+                    <h2 class="section-title text-center">Let's <span class="gradient-text gradient-primary">Build
+                            Together</span></h2>
+                    <p class="text-center section-desc">Ready to scale your digital presence? Reach out and let's craft
+                        an ecosystem tailored to your needs.</p>
+
+                    <div class="contact-grid" style="display: grid; grid-template-columns: 1fr; gap: 3rem; margin-top: 3rem;">
+                        <!-- Direct Contact Form -->
+                        <div class="contact-form-wrapper">
+                            <form action="https://formspree.io/f/info@franciscomanneh.com" method="POST" class="contact-form">
+                                <div class="form-group" style="margin-bottom: 1.5rem;">
+                                    <input type="text" name="name" placeholder="Your Name" required 
+                                           style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1.5rem;">
+                                    <input type="email" name="_replyto" placeholder="Your Email" required 
+                                           style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1.5rem;">
+                                    <textarea name="message" placeholder="Project Details" required rows="5"
+                                              style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; resize: none;"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Send Message <i class='bx bx-paper-plane'></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Quick Contact Links -->
+                        <div class="contact-info-column" style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;">
+                            <div class="info-card glass-card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                                <i class='bx bxl-whatsapp' style="font-size: 2rem; color: #25D366;"></i>
+                                <div>
+                                    <h4 style="margin: 0; color: white;">WhatsApp</h4>
+                                    <a href="https://wa.me/2203137203" target="_blank" style="color: var(--text-muted); text-decoration: none;">+220 313 7203</a>
+                                </div>
+                            </div>
+                            <div class="info-card glass-card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                                <i class='bx bx-envelope' style="font-size: 2rem; color: var(--secondary);"></i>
+                                <div>
+                                    <h4 style="margin: 0; color: white;">Direct Email</h4>
+                                    <a href="mailto:info@franciscomanneh.com" style="color: var(--text-muted); text-decoration: none;">info@franciscomanneh.com</a>
+                                </div>
+                            </div>
+                            <div class="info-card glass-card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                                <i class='bx bx-phone' style="font-size: 2rem; color: var(--primary);"></i>
+                                <div>
+                                    <h4 style="margin: 0; color: white;">Call Me</h4>
+                                    <a href="tel:+2203137203" style="color: var(--text-muted); text-decoration: none;">+220 313 7203</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+                        @media (min-width: 992px) {
+                            .contact-grid {
+                                grid-template-columns: 1.5fr 1fr !important;
+                            }
+                        }
+                        .contact-form input:focus, .contact-form textarea:focus {
+                            outline: none;
+                            border-color: var(--primary) !important;
+                            background: rgba(255,255,255,0.08) !important;
+                        }
+                    </style>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img" style="height: 35px; margin-bottom: 0.5rem;">
+                    </a>
+                </div>
+                <div class="footer-socials">
+                    
+                    <a href="https://github.com/Franciscomanneh" aria-label="Visit Francisco's GitHub profile"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.tiktok.com/@fmannehcode" aria-label="Visit Francisco's TikTok profile"><i
+                            class='bx bxl-tiktok'></i></a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61587154581770" aria-label="Visit Francisco's Facebook profile"><i
+                            class='bx bxl-facebook'></i></a>
+                </div>
+
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francisco Manneh. Engineered for scale.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Design Detail Modal -->
+    <div class="modal-overlay" id="designModal">
+        <div class="modal-content design-detail-modal glass-overlay">
+            <button class="close-modal"><i class='bx bx-x'></i></button>
+            <div id="designModalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+
+    <!-- Service Detail Modal -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content service-detail-modal glass-overlay">
+            <button class="close-modal" id="closeServiceModal"><i class='bx bx-x'></i></button>
+            <div id="serviceModalBody">
+                <!-- Data injected by JS -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

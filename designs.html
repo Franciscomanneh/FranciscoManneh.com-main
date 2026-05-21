@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio | Francisco Manneh - UI/UX Showcase in The Gambia</title>
+    <meta name="description"
+        content="Explore the UI/UX design showcase of Francisco Manneh. A collection of mobile interfaces, dashboards, and landing page concepts focused on user experience.">
+    <link rel="canonical" href="https://franciscomanneh.com/designs">
+    <link rel="icon" type="image/png" href="Favicon/3-removebg-preview.png">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' media="print"
+        onload="this.media='all'">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="designs-page">
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Loading Gallery...</div>
+    </div>
+
+    <!-- Top Navigation (Identical to index) -->
+    <header class="top-nav glass-nav scrolled">
+        <a href="index.html" class="logo">
+            <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img">
+        </a>
+        <nav class="desktop-links">
+            <a href="index.html#home" class="nav-link">Home</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <a href="designs.html" class="nav-link active">Designs</a>
+            <a href="index.html#cv" class="nav-link">CV</a>
+            <a href="index.html#projects" class="nav-link">Work</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="desktop-actions">
+            <button class="hamburger-btn" aria-label="Toggle Menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <a href="index.html#contact" class="btn btn-primary compact-btn">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Overlay Navigation (Identical to index) -->
+    <div class="overlay-nav glass-overlay">
+        <div class="overlay-header">
+            <a href="index.html" class="logo">
+                <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img">
+            </a>
+            <button class="close-overlay-btn"><i class='bx bx-x'></i></button>
+        </div>
+        <nav class="overlay-links">
+            <a href="index.html#home" class="overlay-link"><i class='bx bx-home-alt-2'></i> Home</a>
+            <a href="index.html#services" class="overlay-link"><i class='bx bx-layer'></i> Services</a>
+            <a href="designs.html" class="overlay-link active"><i class='bx bx-paint'></i> Designs</a>
+            <a href="index.html#cv" class="overlay-link"><i class='bx bx-file'></i> CV / Resume</a>
+            <a href="index.html#projects" class="overlay-link"><i class='bx bx-briefcase-alt-2'></i> Work</a>
+            <a href="index.html#contact" class="overlay-link"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+    </div>
+
+    <main class="container" style="margin-top: 4rem;">
+        <section class="section">
+            <div class="section-header reveal">
+                <h1 class="section-title">Design <span class="gradient-text gradient-secondary">Showcase</span></h1>
+                <p class="section-desc">A collection of technical UI/UX concepts and responsive web applications built
+                    for optimal user engagement.</p>
+            </div>
+
+            <div class="designs-grid">
+                <!-- resto 1 -->
+                <div class="design-card glass-card reveal" data-id="restaurant-1">
+                    <img src="./designs/business designs/image.png" alt="FinTech Dashboard UI Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Restaurant Design 1</span>
+                        <h3 class="design-title">Restaurant</h3>
+                        <p class="design-desc">Comprehensive restaurant website.</p>
+                    </div>
+                </div>
+
+                <!-- resto 2 -->
+                <div class="design-card glass-card reveal" data-id="restaurant-2" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy.png" alt="Mobile Retail Experience UI Design"
+                        loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Restaurant Design 2</span>
+                        <h3 class="design-title">Restaurant</h3>
+                        <p class="design-desc">Mobile shopping interface optimized for user retention and conversion.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- resto 3 -->
+                <div class="design-card glass-card reveal" data-id="restaurant-3" style="transition-delay: 0.2s">
+                    <img src="./designs/business designs/image copy 2.png" alt="SaaS Landing Page UI Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Restaurant Design 3</span>
+                        <h3 class="design-title">Restaurant</h3>
+                        <p class="design-desc">Advanced restaurant platform showcasing full-menu management and reservation systems.</p>
+                    </div>
+                </div>
+
+                <!-- shop 1 -->
+                <div class="design-card glass-card reveal" data-id="shop-1">
+                    <img src="./designs/business designs/image copy 3.png" alt="E-commerce Fashion UI Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Shop Design 1</span>
+                        <h2 class="design-title" style="font-size: 1.25rem;">Retail Fashion</h2>
+                        <p class="design-desc">A minimalist e-commerce interface designed for high-end boutique experiences.</p>
+                    </div>
+                </div>
+
+                <!-- shop 2 -->
+                <div class="design-card glass-card reveal" data-id="shop-2" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 4.png" alt="Groceries App UI Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Shop Design 2</span>
+                        <h3 class="design-title">Grocery & Essentials</h3>
+                        <p class="design-desc">Focusing on intuitive product discovery and a seamless doorstep delivery flow.</p>
+                    </div>
+                </div>
+
+                <!-- shop 3  -->
+                <div class="design-card glass-card reveal" data-id="shop-3" style="transition-delay: 0.2s">
+                    <img src="./designs/business designs/image copy 5.png" alt="Tech Hub Dashboard Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Shop Design 3</span>
+                        <h3 class="design-title">Electronics Hub</h3>
+                        <p class="design-desc">High-density technical product grid with advanced specification filtering.</p>
+                    </div>
+                </div>
+
+                 <!-- school 1 -->
+                <div class="design-card glass-card reveal" data-id="school-1" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 6.png" alt="EduTech Dashboard UI" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">School Design 1</span>
+                        <h3 class="design-title">EduTech Hub</h3>
+                        <p class="design-desc">A centralized learning management system for streamlined student progress tracking.</p>
+                    </div>
+                </div>
+
+                 <!-- school 2 -->
+                <div class="design-card glass-card reveal" data-id="school-2" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 7.png" alt="Academic Portal UI" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">School Design 2</span>
+                        <h3 class="design-title">Knowledge Portal</h3>
+                        <p class="design-desc">Interactive campus interface connecting staff, students, and resources effectively.</p>
+                    </div>
+                </div>
+
+                 <!-- school 3  -->
+                <div class="design-card glass-card reveal" data-id="school-3" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 8.png" alt="E-Learning Experience Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">School Design 3</span>
+                        <h3 class="design-title">LMS Academy</h3>
+                        <p class="design-desc">Modern e-learning architecture optimized for remote education and engagement.</p>
+                    </div>
+                </div>
+
+
+                 <!-- agency 1  -->
+                <div class="design-card glass-card reveal" data-id="agency-1" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 9.png" alt="Creative Studio UI Design" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Agency Design 1</span>
+                        <h3 class="design-title">Creative Studio</h3>
+                        <p class="design-desc">Full-service agency showcase highlighting visual storytelling and precision.</p>
+                    </div>
+                </div>
+                 <!-- agency 2  -->
+                <div class="design-card glass-card reveal" data-id="agency-2" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 10.png" alt="Digital Partners Portfolio" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Agency Design 2</span>
+                        <h3 class="design-title">Digital Partners</h3>
+                        <p class="design-desc">Sophisticated business presence for multi-disciplinary consulting firms.</p>
+                    </div>
+                </div>
+                 <!-- agency 3  -->
+                <div class="design-card glass-card reveal" data-id="agency-3" style="transition-delay: 0.1s">
+                    <img src="./designs/business designs/image copy 11.png" alt="Next-Gen Agency Interface" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-category">Agency Design 3</span>
+                        <h3 class="design-title">Tech Agency</h3>
+                        <p class="design-desc">Modern tech-focused agency layout optimized for conversion and credibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: Design Philosophy -->
+        <section class="section">
+            <div class="section-header reveal">
+                <h2 class="section-title">Design <span class="gradient-text gradient-primary">Methodology</span></h2>
+                <p class="section-desc">My approach balances aesthetic excellence with technical performance, ensuring every interface drives business growth.</p>
+            </div>
+            <div class="footer-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="glass-card p-4" style="padding: 2rem;">
+                    <i class='bx bx-search-alt-2 gradient-text' style="font-size: 2.5rem; margin-bottom: 1rem; display: block;"></i>
+                    <h3 style="margin-bottom: 1rem;">Discovery & Strategy</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Deep analysis of user behavior and business requirements to establish a solid foundation for every pixel.</p>
+                </div>
+                <div class="glass-card p-4" style="padding: 2rem;">
+                    <i class='bx bx-pen gradient-text' style="font-size: 2.5rem; margin-bottom: 1rem; display: block;"></i>
+                    <h3 style="margin-bottom: 1rem;">Visual Architecture</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Crafting high-fidelity prototypes that define the visual language and interaction patterns of your digital asset.</p>
+                </div>
+                <div class="glass-card p-4" style="padding: 2rem;">
+                    <i class='bx bx-rocket gradient-text' style="font-size: 2.5rem; margin-bottom: 1rem; display: block;"></i>
+                    <h3 style="margin-bottom: 1rem;">Performance Design</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Optimizing every element for speed, accessibility, and responsiveness across all modern devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: CTA -->
+        <section class="section reveal" style="text-align: center; background: radial-gradient(circle at center, rgba(168, 85, 247, 0.1) 0%, transparent 70%); border-radius: 2rem; padding: 5rem 2rem;">
+            <h2 class="section-title">Ready to launch <span class="gradient-text gradient-secondary">your vision?</span></h2>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto 2.5rem;">I translate complex business ideas into stunning visual experiences. Let's build something exceptional together.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn-primary">Start a Project</a>
+                <a href="mailto:franciscomanneh@gmail.com" class="btn btn-outline">Schedule Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img"
+                            style="height: 35px; margin-bottom: 0.5rem;">
+                    </a>
+                    <p>Digital Architect</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Franciscomanneh"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.youtube.com/@codewithfrancisco-1"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.tiktok.com/@fmannehcode"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francisco Manneh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Design Detail Modal (Identical to index) -->
+    <div class="modal-overlay" id="designModal">
+        <div class="modal-content design-detail-modal glass-overlay">
+            <button class="close-modal"><i class='bx bx-x'></i></button>
+            <div id="designModalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => loader.style.display = 'none', 500);
+            }
+        });
+    </script>
+</body>
+
+</html>

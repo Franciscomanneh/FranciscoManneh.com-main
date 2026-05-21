@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Architecture | F. Manneh Academy</title>
+    <meta name="description" content="Master front-end web architecture by building real-world projects.">
+    <link rel="icon" type="image/png" href="Favicon/3-removebg-preview.png">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Consolas&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academy.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-container">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Loading Workspace...</div>
+    </div>
+
+    <!-- Top Navigation (Desktop) -->
+    <header class="top-nav glass-nav">
+        <a href="index.html" class="logo">F. MANNEH <span class="hide-mobile" style="font-weight:400; font-size:1rem;">| Academy</span></a>
+        <nav class="desktop-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#academy" class="nav-link active">Courses</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="desktop-actions">
+            <!-- Hamburger Menu Trigger (Mobile/Tablet) -->
+            <button class="hamburger-btn" aria-label="Toggle Menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <a href="https://docs.google.com/forms/" target="_blank" class="btn btn-primary compact-btn">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Overlay Navigation (Hamburger Menu) -->
+    <div class="overlay-nav glass-overlay">
+        <div class="overlay-header">
+            <a href="index.html" class="logo">Academy</a>
+            <button class="close-overlay-btn"><i class='bx bx-x'></i></button>
+        </div>
+        <nav class="overlay-links">
+            <a href="index.html" class="overlay-link"><i class='bx bx-home-alt-2'></i> Home</a>
+            <a href="index.html#academy" class="overlay-link"><i class='bx bx-book-open'></i> All Courses</a>
+            <a href="#" class="overlay-link active"><i class='bx bx-code-alt'></i> HTML & CSS</a>
+            <a href="pld.html" class="overlay-link"><i class='bx bx-brain'></i> PLD Logic</a>
+            <a href="math.html" class="overlay-link"><i class='bx bx-math'></i> Maths</a>
+            <a href="index.html#contact" class="overlay-link"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav glass-nav">
+        <a href="index.html" class="bottom-nav-item">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Home</span>
+        </a>
+        <a href="index.html#academy" class="bottom-nav-item active">
+            <i class='bx bx-book-open'></i>
+            <span>Courses</span>
+        </a>
+        <a href="#progress" class="bottom-nav-item">
+            <i class='bx bx-chart'></i>
+            <span>Progress</span>
+        </a>
+        <a href="index.html#contact" class="bottom-nav-item">
+            <i class='bx bx-envelope'></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2203137203" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <main class="academy-layout">
+        
+        <!-- SIDEBAR (Desktop) -->
+        <aside class="course-sidebar reveal">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class='bx bx-chevron-right'></i> 
+                <a href="index.html#academy">Academy</a> <i class='bx bx-chevron-right'></i> 
+                <span>HTML & CSS</span>
+            </div>
+
+            <div class="progress-card glass-card" id="progress">
+                <div class="progress-header">
+                    <span>Course Progress</span>
+                    <span id="progressText">0% Completed</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Expand modules to mark them as completed.</p>
+            </div>
+
+            <div class="lesson-list glass-card">
+                <h4 style="margin-bottom: 1rem;">Course Modules</h4>
+                <div class="lesson-item active">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>1. HTML Foundations</span>
+                </div>
+                <div class="lesson-item">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>2. Semantic Structure</span>
+                </div>
+                <div class="lesson-item">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>3. CSS Styling</span>
+                </div>
+                <div class="lesson-item">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>4. Flex & Grid Layouts</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <article class="course-content">
+            
+            <!-- Hero Section -->
+            <section class="course-header reveal">
+                <span class="badge glass-badge" style="border-color: #38bdf8; color: #38bdf8;">Project-Based Learning</span>
+                <h1 class="course-title" style="margin-bottom: 0.5rem;">HTML & CSS<br><span class="gradient-text gradient-primary">Architecture</span></h1>
+                <p class="section-desc" style="margin: 0 auto; text-align: center; max-width: 800px; line-height: 1.6;">
+                    Dive deep into the core building blocks of the web.<br>This module focuses exclusively on writing clean, semantic structure, styling with modern rules, and constructing responsive UI from scratch.
+                </p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; width: 100%; flex-wrap: wrap;">
+                    <span class="tag"><i class='bx bx-time'></i> 4 Weeks</span>
+                    <span class="tag"><i class='bx bx-user'></i> Beginners Welcome</span>
+                </div>
+            </section>
+
+            <!-- Module 1: HTML Box Model -->
+            <section class="module glass-card reveal delay-1">
+                <div class="module-header tap-effect">
+                    <div>
+                        <span style="color: var(--primary); font-family: var(--font-heading); font-weight: 700; margin-right: 0.5rem;">01</span>
+                        <span class="module-title">The Foundation: HTML Tags & Elements</span>
+                    </div>
+                    <i class='bx bx-chevron-down module-icon'></i>
+                </div>
+                <div class="module-content">
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Every great bridge requires a solid structure. In web development, HTML is the steel frame holding everything together. Let's look at how elements are nested.</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>index.html</span>
+                            <button class="copy-btn"><i class='bx bx-copy'></i> Copy</button>
+                        </div>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Structural Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;main class="container"&gt;
+        &lt;h1&gt;Architecting The Web&lt;/h1&gt;
+        &lt;p&gt;Paragraph elements encapsulate text blocks.&lt;/p&gt;
+        &lt;a href="#" class="btn"&gt;Click Action&lt;/a&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 2: CSS Basics -->
+            <section class="module glass-card reveal delay-2">
+                <div class="module-header tap-effect">
+                    <div>
+                        <span style="color: var(--primary); font-family: var(--font-heading); font-weight: 700; margin-right: 0.5rem;">02</span>
+                        <span class="module-title">Visual Engineering: Intro to CSS</span>
+                    </div>
+                    <i class='bx bx-chevron-down module-icon'></i>
+                </div>
+                <div class="module-content">
+                    <p style="margin-top: 1rem; color: var(--text-muted);">If HTML is the steel frame, CSS is the interior design, paint, and lighting. We target elements using selectors to build a cohesive visual aesthetic.</p>
+                    
+                    <div class="qna-card">
+                        <div class="qna-q">How do I correctly reset browser defaults?</div>
+                        <div class="qna-a">Most professional developers start with a "Reset" block. The * selector targets every element on the page ensuring sizing calculation is predictable.</div>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>style.css</span>
+                            <button class="copy-btn"><i class='bx bx-copy'></i> Copy</button>
+                        </div>
+                        <pre><code>/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* Ensures padding doesn't inflate element width */
+}
+
+/* Targeting a Class */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    background-color: #0a0a0f;
+    color: #ffffff;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 3: Modern Layouts with Flexbox -->
+            <section class="module glass-card reveal delay-3">
+                <div class="module-header tap-effect">
+                    <div>
+                        <span style="color: var(--primary); font-family: var(--font-heading); font-weight: 700; margin-right: 0.5rem;">03</span>
+                        <span class="module-title">Modern Alignments: Flexbox & Grid</span>
+                    </div>
+                    <i class='bx bx-chevron-down module-icon'></i>
+                </div>
+                <div class="module-content">
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Long gone are the days of floats and table layouts. Learn to leverage Flexbox for 1-dimensional layouts (navbars, cards) and CSS Grid for complex 2D architectures.</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Flexbox Center Snippet</span>
+                            <button class="copy-btn"><i class='bx bx-copy'></i> Copy</button>
+                        </div>
+                        <pre><code>.hero-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;       /* Full viewport height */
+    flex-direction: column;  /* Stack items vertically */
+    gap: 1.5rem;             /* Space between items */
+}</code></pre>
+                    </div>
+                    
+                    <div class="qna-card" style="border-left-color: var(--secondary);">
+                        <div class="qna-q">When should I use Flexbox vs Grid?</div>
+                        <div class="qna-a">Use <strong>Flexbox</strong> when aligning elements in a single row or column (like a nav menu or a single row of buttons). Use <strong>CSS Grid</strong> when you need precise control over multiple rows and columns simultaneously (like a photo gallery or page skeleton).</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Section -->
+            <section class="practice-box glass-card reveal">
+                <h3>Try It Yourself</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Test your logic: How would you create a button that changes background color when the user hovers over it?</p>
+                <button class="btn btn-primary tap-effect answer-toggle-btn" data-target="practiceAnswer1">Reveal Answer <i class='bx bx-chevron-down'></i></button>
+                
+                <div class="answer-toggle-content" id="practiceAnswer1">
+                    <p>You use the <code>:hover</code> pseudo-class in CSS!</p>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Hover State</span>
+                            <button class="copy-btn"><i class='bx bx-copy'></i> Copy</button>
+                        </div>
+                        <pre><code>.btn {
+    background-color: #2563eb;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="glass-card reveal" style="text-align: center; margin-top: 3rem; background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(15, 23, 42, 0.5)); border-color: rgba(37, 99, 235, 0.2);">
+                <h3 style="font-size: clamp(1.4rem, 4vw, 1.8rem); margin-bottom: 1rem;">Ready to build real projects?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Stop watching tutorials.<br>Join the academy to build fully responsive websites from day one.</p>
+                <div class="hero-actions" style="margin-bottom: 0;">
+                    <a href="https://docs.google.com/forms/" target="_blank" class="btn btn-primary lg-btn tap-effect">Join the Class <i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="https://chat.whatsapp.com/" target="_blank" class="btn btn-outline lg-btn tap-effect"><i class='bx bxl-whatsapp'></i> Class Group</a>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="academy.js"></script>
+</body>
+</html>

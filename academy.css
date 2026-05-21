@@ -1,0 +1,443 @@
+/**
+ * ACADEMY SPECIFIC STYLES
+ * Extends the main style.css with course-specific layouts.
+ */
+
+ /* =========================================
+    LAYOUT & SIDEBAR (DESKTOP)
+ ========================================= */
+ .academy-layout {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 1.5rem;
+     padding-top: calc(var(--top-nav-height) + 1.5rem);
+     padding-left: 16px;
+     padding-right: 16px;
+     width: 100%;
+     max-width: 480px;
+     margin: 0 auto;
+     overflow-x: hidden;
+ }
+ 
+ @media (min-width: 768px) {
+     .academy-layout {
+         gap: 2rem;
+         padding-left: 1.5rem;
+         padding-right: 1.5rem;
+         max-width: 1200px;
+     }
+ }
+ 
+ @media (min-width: 1024px) {
+     .academy-layout {
+         grid-template-columns: 300px 1fr;
+         align-items: start;
+     }
+     
+     .course-sidebar {
+         position: sticky;
+         top: calc(var(--top-nav-height) + 2rem);
+     }
+ }
+ 
+ /* =========================================
+    BREADCRUMBS
+ ========================================= */
+ .breadcrumb {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     gap: 4px;
+     font-size: 12px;
+     color: var(--text-muted);
+     margin-bottom: 2rem;
+     padding: 0 4px;
+ }
+
+ @media (min-width: 480px) {
+     .breadcrumb {
+         gap: 6px;
+         padding: 0;
+     }
+ }
+ 
+ @media (min-width: 1024px) {
+     .breadcrumb {
+         justify-content: flex-start;
+     }
+ }
+ 
+ .breadcrumb a {
+     color: var(--primary);
+     transition: color 0.3s;
+ }
+ 
+ .breadcrumb a:hover {
+     color: white;
+ }
+ 
+ .breadcrumb i {
+     font-size: 0.8rem;
+ }
+ 
+ /* =========================================
+    SIDEBAR & PROGRESS
+ ========================================= */
+ .progress-card {
+     margin-bottom: 1.5rem;
+     padding: 16px;
+     width: 100%;
+     max-width: 100%;
+     border-radius: 14px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ @media (min-width: 768px) {
+     .progress-card {
+         padding: 1.5rem;
+     }
+ }
+ 
+ .progress-header {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 1rem;
+     font-weight: 600;
+     font-size: clamp(14px, 4vw, 18px);
+     gap: 4px;
+     width: 100%;
+     text-align: center;
+ }
+
+ @media (min-width: 480px) {
+     .progress-header {
+         flex-direction: row;
+         justify-content: center;
+         gap: 6px;
+     }
+ }
+ 
+ .progress-track {
+     width: 100%;
+     height: 8px;
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 4px;
+     overflow: hidden;
+     margin-bottom: 1rem;
+ }
+ 
+ .progress-fill {
+     height: 100%;
+     background: linear-gradient(90deg, var(--secondary), #34d399);
+     border-radius: 4px;
+     transition: width 0.5s ease;
+ }
+ 
+ .lesson-list {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     align-items: center;
+     text-align: center;
+     padding: 16px;
+ }
+
+ @media (min-width: 768px) {
+     .lesson-list {
+         gap: 0.5rem;
+         padding: 1.5rem;
+     }
+ }
+ 
+ .lesson-item {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 10px;
+     padding: 12px 16px;
+     background: rgba(255, 255, 255, 0.02);
+     border-radius: 10px;
+     transition: background 0.3s;
+     cursor: pointer;
+     min-height: 44px;
+     width: 100%;
+     overflow: hidden;
+ }
+ 
+ .lesson-item span {
+     flex: 1;
+     font-size: 14px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.4;
+ }
+ 
+ @media (min-width: 768px) {
+     .lesson-item {
+         padding: 0.75rem 1rem;
+     }
+ }
+ 
+ .lesson-item:hover {
+     background: rgba(255, 255, 255, 0.05);
+ }
+ 
+ .lesson-item.completed .lesson-icon {
+     color: var(--secondary);
+ }
+ 
+ .lesson-item.active {
+     border: 1px solid var(--border-glass);
+     background: rgba(255, 255, 255, 0.08);
+ }
+ 
+ .lesson-icon {
+     font-size: 1.2rem;
+     color: var(--text-muted);
+ }
+ 
+ /* =========================================
+    COURSE CONTENT & ACCORDIONS
+ ========================================= */
+ .course-header {
+     margin-bottom: 3rem;
+     text-align: center;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .course-title {
+     font-size: clamp(20px, 6vw, 36px);
+     margin-bottom: 1rem;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.2;
+     text-align: center;
+ }
+ 
+ .module {
+     margin-bottom: 16px;
+     border-radius: 14px;
+ }
+ 
+ .module-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 16px;
+     cursor: pointer;
+     transition: background 0.3s;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     gap: 12px;
+     min-height: 48px;
+     width: 100%;
+ }
+
+ @media (min-width: 768px) {
+     .module-header {
+         padding: 1.5rem;
+         gap: 1rem;
+         background: rgba(255, 255, 255, 0.05);
+     }
+ }
+ 
+ .module-title {
+     font-size: clamp(13px, 3.5vw, 1.1rem);
+     font-family: var(--font-heading);
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     white-space: normal;
+     flex: 1;
+     min-width: 0;
+     line-height: 1.3;
+ }
+ 
+ .module-icon {
+     font-size: 1.5rem;
+     transition: transform 0.3s;
+     flex-shrink: 0;
+ }
+ 
+ .module.active .module-icon {
+     transform: rotate(180deg);
+ }
+ 
+ .module-content {
+     padding: 0 16px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.4s ease, padding 0.4s ease;
+ }
+ 
+ .module.active .module-content {
+     padding: 0 16px 16px 16px;
+ }
+ 
+ @media (min-width: 768px) {
+     .module-content {
+         padding: 0 1.5rem;
+     }
+     .module.active .module-content {
+         padding: 0 1.5rem 1.5rem 1.5rem;
+     }
+ }
+ 
+ /* =========================================
+    INTERACTIVE ELEMENTS & CODE
+ ========================================= */
+ .qna-card {
+     background: rgba(0, 0, 0, 0.2);
+     border-radius: 12px;
+     padding: 16px;
+     margin-top: 1rem;
+     border-left: 4px solid var(--primary);
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     .qna-card {
+         padding: 1.5rem;
+     }
+ }
+ 
+ .qna-q {
+     font-weight: 600;
+     margin-bottom: 1rem;
+     color: white;
+ }
+ 
+ .qna-a {
+     color: var(--text-muted);
+ }
+ 
+ .code-block {
+     position: relative;
+     background: #111116;
+     border-radius: 10px;
+     margin: 1.5rem 0;
+     overflow: hidden;
+ }
+ 
+ .code-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.5rem 1rem;
+     background: rgba(255, 255, 255, 0.05);
+     font-size: 0.85rem;
+     color: var(--text-muted);
+ }
+ 
+ .copy-btn {
+     background: none;
+     border: none;
+     color: var(--primary);
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     gap: 0.25rem;
+     font-family: var(--font-body);
+     font-size: 0.85rem;
+     transition: color 0.3s;
+ }
+ 
+ .copy-btn:hover {
+     color: white;
+ }
+ 
+ .code-block pre {
+     padding: 1rem;
+     overflow-x: auto;
+     color: #e2e8f0;
+     font-family: Consolas, Monaco, monospace;
+     font-size: 0.9rem;
+     line-height: 1.5;
+ }
+ 
+ /* =========================================
+    MATHS & EQUATIONS
+ ========================================= */
+ .math-step {
+     display: flex;
+     gap: 1rem;
+     margin-bottom: 1rem;
+     align-items: center;
+     background: rgba(255, 255, 255, 0.02);
+     padding: 1rem;
+     border-radius: 10px;
+ }
+ 
+ .math-num {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: var(--primary);
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 700;
+     flex-shrink: 0;
+ }
+ 
+ .answer-highlight {
+     color: var(--secondary);
+     font-weight: 700;
+     padding: 0.25rem 0.5rem;
+     background: rgba(5, 150, 105, 0.1);
+     border-radius: 4px;
+ }
+ 
+ /* =========================================
+    PRACTICE SECTION
+ ========================================= */
+ .practice-box {
+     border: 1px dashed var(--border-glass);
+     border-radius: 15px;
+     padding: 1.25rem 1rem;
+     text-align: center;
+     margin-top: 2rem;
+ }
+ 
+ @media (min-width: 768px) {
+     .practice-box {
+         padding: 2rem;
+         margin-top: 3rem;
+     }
+ }
+ 
+ .answer-toggle-content {
+     display: none;
+     margin-top: 1.5rem;
+     padding-top: 1.5rem;
+     border-top: 1px solid var(--border-glass);
+     text-align: left;
+ }
+ 
+ .answer-toggle-content.show {
+     display: block;
+ }
+ 
+ /* =========================================
+    STICKY CONTINUE MOB
+ ========================================= */
+ .sticky-continue {
+     position: fixed;
+     bottom: calc(var(--bottom-nav-height) + 1.5rem);
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 990;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+ }
+ 
+ @media (min-width: 768px) {
+     .sticky-continue {
+         display: none; /* Hide on desktop assuming sidebar handles progress */
+     }
+ }
