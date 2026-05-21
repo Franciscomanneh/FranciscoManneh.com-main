@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <meta name="description"
+        content="Explore my portfolio of web applications, mobile apps, and AI solutions. Real projects with real impact.">
+    <link rel="icon" type="image/png" href="Favicon/3-removebg-preview.png">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Navigation (Desktop) -->
+    <header class="top-nav glass-nav">
+        <a href="index.html" class="logo">
+            <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img">
+        </a>
+        <nav class="desktop-links">
+            <a href="index.html#home" class="nav-link">Home</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link active">Work</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="desktop-actions">
+            <!-- Hamburger Menu Trigger (Mobile/Tablet) -->
+            <button class="hamburger-btn" aria-label="Toggle Menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <a href="https://wa.me/2203137203" target="_blank" class="btn btn-primary compact-btn">Let's Talk</a>
+        </div>
+    </header>
+
+    <!-- Overlay Navigation (Hamburger Menu) -->
+    <div class="overlay-nav glass-overlay">
+        <div class="overlay-header">
+            <a href="index.html" class="logo">
+                <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img">
+            </a>
+            <button class="close-overlay-btn"><i class='bx bx-x'></i></button>
+        </div>
+        <nav class="overlay-links">
+            <a href="index.html#home" class="overlay-link"><i class='bx bx-home-alt-2'></i> Home</a>
+            <a href="index.html#services" class="overlay-link"><i class='bx bx-layer'></i> Services</a>
+            <a href="projects.html" class="overlay-link active"><i class='bx bx-briefcase-alt-2'></i> Work</a>
+            <a href="index.html#about" class="overlay-link"><i class='bx bx-user'></i> About</a>
+            <a href="index.html#contact" class="overlay-link"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+        <div class="overlay-footer">
+            <p>Let's build something amazing.</p>
+            <div class="social-links">
+                <a href="https://github.com/Franciscomanneh"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.youtube.com/@codewithfrancisco-1"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav glass-nav">
+        <a href="index.html#home" class="bottom-nav-item">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Home</span>
+        </a>
+        <a href="index.html#services" class="bottom-nav-item">
+            <i class='bx bx-layer'></i>
+            <span>Services</span>
+        </a>
+        <a href="projects.html" class="bottom-nav-item active">
+            <i class='bx bx-briefcase-alt-2'></i>
+            <span>Work</span>
+        </a>
+        <a href="index.html#contact" class="bottom-nav-item">
+            <i class='bx bx-envelope'></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="projects-hero" class="section hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-label-wrapper">
+                        <span class="hero-badge"><i class='bx bx-briefcase-alt'></i> Portfolio Showcase</span>
+                    </div>
+                    <h1 class="hero-title">
+                        My Projects & <br>
+                        <span class="gradient-text gradient-primary">Case Studies</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Real solutions engineered for real-world impact. Each project represents a unique challenge solved with precision, performance, and purpose.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">30+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">5+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Success</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Hero Diagram -->
+                <div class="hero-visual reveal" style="transition-delay: 0.3s">
+                    <div class="visual-container">
+                        <div class="diagram-container">
+                            <div class="diagram-node main">Engineering</div>
+                            <div class="diagram-node n1">Strategy</div>
+                            <div class="diagram-node n2">Design</div>
+                            <div class="diagram-node n3">Deploy</div>
+                            <div class="diagram-line l1"></div>
+                            <div class="diagram-line l2"></div>
+                            <div class="diagram-line l3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="section projects-filter">
+            <div class="container">
+                <div class="filter-buttons reveal">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class='bx bx-grid-alt'></i> All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <i class='bx bx-code-alt'></i> Web Apps
+                    </button>
+                    <button class="filter-btn" data-filter="ai">
+                        <i class='bx bx-bot'></i> AI & Automation
+                    </button>
+                    <button class="filter-btn" data-filter="mobile">
+                        <i class='bx bx-mobile-alt'></i> Mobile Apps
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="section projects-showcase">
+            <div class="container">
+                <div class="projects-grid">
+
+                    <!-- Website Project-->
+                    <div class="project-card glass-card reveal" data-category="web">
+                        <div class="project-image-wrapper">
+                            <img src="./Images/14.png" alt="High-Performance E-Commerce Website" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://franciscomanneh.github.io/multipurpose/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">Web Development</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>High Performance E-Commerce</h3>
+                            <p>A sophisticated retail platform engineered for high-volume transactions, dynamic
+                                filtering, and zero-friction checkout.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="ecommerce">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Website -->
+                    <div class="project-card glass-card reveal" data-category="web" style="transition-delay: 0.1s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/17.png" alt="Interactive Snake Game Application" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://franciscomanneh.github.io/Fra-Amie-s-Resto/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">Web Development</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Restaurant Website</h3>
+                            <p>A modern, responsive restaurant website featuring a dynamic menu, online ordering system,
+                                and interactive reservation booking.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="snake">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Ecommerce Website -->
+                    <div class="project-card glass-card reveal" data-category="web" style="transition-delay: 0.2s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/image.png" alt="Predictive AI Advisory Chatbot" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://franciscomanneh.github.io/fra-s-shopping-main/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">Web Development</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Ecommerce Website</h3>
+                            <p>A modern, responsive ecommerce website featuring a dynamic menu, online ordering system,
+                                and interactive reservation booking.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn"
+                                data-project="ai-chatbot">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Dashboard -->
+                    <div class="project-card glass-card reveal" data-category="mobile" style="transition-delay: 0.3s">
+                        <div class="project-image-wrapper">
+                            <img src="./Images/image.png" alt="Analytics Dashboard Application" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://calculator-sooty-three-10.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">Mobile App</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Calculator App</h3>
+                            <p>A modern, responsive calculator application with a clean user interface and smooth
+                                animations.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="dashboard">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Login System -->
+                    <div class="project-card glass-card reveal" data-category="games" style="transition-delay: 0.4s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/1.png" alt="Secure Authentication System" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://snake-game-six-ruby.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">Game Development</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Snake Game</h3>
+                            <p>A classic snake game with modern graphics and smooth gameplay.</p>
+                            <div class="tech-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">LocalStorage</span>
+                                <span class="tag">Security</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="login">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: HTML/CSS Course -->
+                    <div class="project-card glass-card reveal" data-category="mobile" style="transition-delay: 0.5s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/3.png" alt="Interactive HTML/CSS Learning Platform" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://music-beta-rosy.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">Mobile App</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Music Player</h3>
+                            <p>A modern, responsive music player with a clean user interface and smooth animations.</p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Education</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="html-css">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: HTML/CSS Course -->
+                    <div class="project-card glass-card reveal" data-category="ai" style="transition-delay: 0.5s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/7.png" alt="Interactive HTML/CSS Learning Platform" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://consultation-chat.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">AI & Automation</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Consultation Chatbot</h3>
+                            <p>A modern, responsive consultation chat with a clean user interface and smooth animations.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Education</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="html-css">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: HTML/CSS Course -->
+                    <div class="project-card glass-card reveal" data-category="ai" style="transition-delay: 0.5s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/12.png" alt="Interactive HTML/CSS Learning Platform" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://style-bot-seven.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">AI & Automation</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tailoring Chatbot</h3>
+                            <p>A modern, responsive tailoring chat with a clean user interface and smooth animations.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Education</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="html-css">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Project 9: HTML/CSS Course -->
+                    <div class="project-card glass-card reveal" data-category="ai" style="transition-delay: 0.5s">
+                        <div class="project-image-wrapper">
+                            <img src="./designs/9.png" alt="Interactive HTML/CSS Learning Platform" class="project-img"
+                                width="600" height="337" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://medical-chat-eight.vercel.app/" target="_blank"
+                                    class="btn btn-primary sm-btn tap-effect">View Live</a>
+                            </div>
+                            <div class="project-category">AI & Automation</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Ai Junior</h3>
+                            <p>A modern, responsive Ai Junior with a clean user interface and smooth animations.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Education</span>
+                            </div>
+                            <button class="btn btn-outline sm-btn tap-effect view-details-btn" data-project="html-css">
+                                View Details <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="section" style="padding-top: 2rem; padding-bottom: 5rem;">
+            <div class="container container-sm">
+                <div class="contact-box glass-card reveal" style="text-align: center; padding: 3rem 1.5rem;">
+                    <h2 class="section-title text-center">Ready to <span class="gradient-text gradient-primary">Start a
+                            Project?</span></h2>
+                    <p class="text-center section-desc" style="margin-bottom: 2rem;">Let's collaborate to build your
+                        next big idea. Reach out to discuss timelines, pricing, and technical strategy.</p>
+                    <div class="hero-actions" style="margin-bottom: 0; justify-content: center;">
+                        <a href="https://wa.me/2203137203" target="_blank" class="btn btn-primary lg-btn tap-effect">
+                            <i class='bx bxl-whatsapp'></i> Let's Chat
+                        </a>
+                        <a href="mailto:franciscomanneh@gmail.com" class="btn btn-outline lg-btn tap-effect">
+                            <i class='bx bx-envelope'></i> Email Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./Favicon/3-removebg-preview.png" alt="F. Manneh Logo" class="logo-img" style="height: 35px; margin-bottom: 0.5rem;">
+                    </a>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Franciscomanneh" aria-label="Visit Francisco's GitHub profile"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://www.youtube.com/@codewithfrancisco-1"
+                        aria-label="Visit Francisco's YouTube channel"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.tiktok.com/@fmannehcode" aria-label="Visit Francisco's TikTok profile"><i
+                            class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francisco Manneh. Engineered for scale.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content glass-overlay project-modal">
+            <button class="close-modal"><i class='bx bx-x'></i></button>
+            <div id="projectModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="projects.js" defer></script>
+</body>
+
+</html>

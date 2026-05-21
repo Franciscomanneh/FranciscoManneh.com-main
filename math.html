@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 10 Mathematics | F. Manneh Academy</title>
+    <meta name="description" content="Master Grade 10 Mathematics through direct problem-solving.">
+    <link rel="icon" type="image/png" href="Favicon/3-removebg-preview.png">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academy.css">
+</head>
+<body>
+
+    <!-- Top Navigation (Desktop) -->
+    <header class="top-nav glass-nav">
+        <a href="index.html" class="logo">F. MANNEH <span class="hide-mobile" style="font-weight:400; font-size:1rem;">| Academy</span></a>
+        <nav class="desktop-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#academy" class="nav-link active">Courses</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="desktop-actions">
+            <!-- Hamburger Menu Trigger (Mobile/Tablet) -->
+            <button class="hamburger-btn" aria-label="Toggle Menu"><i class='bx bx-menu'></i></button>
+            <a href="https://docs.google.com/forms/" target="_blank" class="btn btn-primary compact-btn">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Overlay Navigation (Hamburger Menu) -->
+    <div class="overlay-nav glass-overlay">
+        <div class="overlay-header">
+            <a href="index.html" class="logo">Academy</a>
+            <button class="close-overlay-btn"><i class='bx bx-x'></i></button>
+        </div>
+        <nav class="overlay-links">
+            <a href="index.html" class="overlay-link"><i class='bx bx-home-alt-2'></i> Home</a>
+            <a href="index.html#academy" class="overlay-link"><i class='bx bx-book-open'></i> All Courses</a>
+            <a href="html-css.html" class="overlay-link"><i class='bx bx-code-alt'></i> HTML & CSS</a>
+            <a href="pld.html" class="overlay-link"><i class='bx bx-brain'></i> PLD Logic</a>
+            <a href="#" class="overlay-link active"><i class='bx bx-math'></i> Maths</a>
+            <a href="index.html#contact" class="overlay-link"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav glass-nav">
+        <a href="index.html" class="bottom-nav-item">
+            <i class='bx bx-home-alt-2'></i>
+            <span>Home</span>
+        </a>
+        <a href="index.html#academy" class="bottom-nav-item active">
+            <i class='bx bx-book-open'></i>
+            <span>Courses</span>
+        </a>
+        <a href="#progress" class="bottom-nav-item">
+            <i class='bx bx-chart'></i>
+            <span>Progress</span>
+        </a>
+        <a href="index.html#contact" class="bottom-nav-item">
+            <i class='bx bx-envelope'></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2203137203" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <main class="academy-layout">
+        
+        <!-- SIDEBAR (Desktop) -->
+        <aside class="course-sidebar reveal">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class='bx bx-chevron-right'></i> 
+                <a href="index.html#academy">Academy</a> <i class='bx bx-chevron-right'></i> 
+                <span>Maths</span>
+            </div>
+
+            <div class="progress-card glass-card" id="progress">
+                <div class="progress-header">
+                    <span>Course Progress</span>
+                    <span id="progressText">0% Completed</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill" style="width: 0%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Expand modules to mark them as completed.</p>
+            </div>
+
+            <div class="lesson-list glass-card">
+                <h4 style="margin-bottom: 1rem;">Course Modules</h4>
+                <div class="lesson-item active">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>1. Algebraic Expressions</span>
+                </div>
+                <div class="lesson-item">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>2. Linear Equations</span>
+                </div>
+                <div class="lesson-item">
+                    <i class='bx bx-circle lesson-icon'></i>
+                    <span>3. Coordinate Geometry</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <article class="course-content">
+            
+            <!-- Hero Section -->
+            <section class="course-header reveal">
+                <span class="badge glass-badge" style="border-color: #10b981; color: #10b981;">Exam Preparation</span>
+                <h1 class="course-title" style="margin-bottom: 0.5rem;">Grade 10<br><span class="gradient-text gradient-secondary">Mathematics</span></h1>
+                <p class="section-desc" style="margin: 0 auto; text-align: center; max-width: 800px; line-height: 1.6;">
+                    Simplified mathematics targeting the national curriculum.<br>We break down complex algebraic and geometric theorems into clear, step-by-step logic frameworks ensuring exam readiness.
+                </p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; width: 100%; flex-wrap: wrap;">
+                    <span class="tag"><i class='bx bx-check-shield'></i> Exam Focused</span>
+                    <span class="tag"><i class='bx bx-conversation'></i> Q&A Format</span>
+                </div>
+            </section>
+
+            <!-- Module 1 -->
+            <section class="module glass-card reveal delay-1">
+                <div class="module-header tap-effect">
+                    <div>
+                        <span style="color: var(--secondary); font-family: var(--font-heading); font-weight: 700; margin-right: 0.5rem;">01</span>
+                        <span class="module-title">Solving Linear Equations</span>
+                    </div>
+                    <i class='bx bx-chevron-down module-icon'></i>
+                </div>
+                <div class="module-content">
+                    <p style="margin-top: 1rem; color: var(--text-muted); margin-bottom: 1.5rem;">Equations are like balancing scales. Whatever you do to one side, you must do to the other. Our goal is always to isolate the variable (x).</p>
+                    
+                    <div style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <h4 style="margin-bottom: 1rem;">Problem: Solve for x</h4>
+                        <div style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 600; text-align: center; letter-spacing: 2px;">
+                            3x + 5 = 20
+                        </div>
+                    </div>
+
+                    <div class="math-step">
+                        <div class="math-num">1</div>
+                        <div>
+                            <strong>Subtract 5 from both sides</strong>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">To isolate the x term, remove constants attached to it.</p>
+                            <p style="font-family: monospace; font-size: 1.1rem; margin-top: 0.5rem;">3x = 20 - 5<br>3x = 15</p>
+                        </div>
+                    </div>
+
+                    <div class="math-step">
+                        <div class="math-num">2</div>
+                        <div>
+                            <strong>Divide both sides by 3</strong>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">To get x by itself, neutralize the multiplication by dividing.</p>
+                            <p style="font-family: monospace; font-size: 1.1rem; margin-top: 0.5rem;">x = 15 ÷ 3</p>
+                        </div>
+                    </div>
+
+                    <div class="math-step" style="border: 1px solid rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.05);">
+                        <div class="math-num" style="background: #10b981;"><i class='bx bx-check'></i></div>
+                        <div>
+                            <strong>Final Answer</strong>
+                            <p style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; font-weight: 700; margin-top: 0.25rem;">
+                                x = <span class="answer-highlight">5</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module 2 -->
+            <section class="module glass-card reveal delay-2">
+                <div class="module-header tap-effect">
+                    <div>
+                        <span style="color: var(--secondary); font-family: var(--font-heading); font-weight: 700; margin-right: 0.5rem;">02</span>
+                        <span class="module-title">Factorizing Expressions</span>
+                    </div>
+                    <i class='bx bx-chevron-down module-icon'></i>
+                </div>
+                <div class="module-content">
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Factorization is the reverse of expanding brackets. We look for the Highest Common Factor (HCF) that relates the terms together.</p>
+                    
+                    <div class="qna-card" style="border-left-color: var(--secondary);">
+                        <div class="qna-q">What is the HCF?</div>
+                        <div class="qna-a">The Highest Common Factor is the largest number (or variable) that divides exactly into two or more numbers. E.g., for 12x and 16, the numerical HCF is 4.</div>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 12px; margin-top: 1.5rem;">
+                        <h4 style="margin-bottom: 0.5rem;">Example:</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">Factorize: 4x² + 12x</p>
+                        <ol style="padding-left: 1.5rem; color: #cbd5e1; line-height: 1.8;">
+                            <li>Find common number: 4</li>
+                            <li>Find common variable: x</li>
+                            <li>Pull out (4x) and place remainder in brackets</li>
+                            <li><strong style="color: white; font-size: 1.1rem;">Answer: <span class="answer-highlight">4x(x + 3)</span></strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Section -->
+            <section class="practice-box glass-card reveal">
+                <h3>Test Your Logic</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Try to solve the equation before checking the answer below.</p>
+                
+                <h4 style="font-family: 'Outfit'; font-size: 1.4rem; margin-bottom: 1.5rem;">Solve for y: <br><span style="color:white;">2(y - 4) = 10</span></h4>
+                
+                <button class="btn btn-outline tap-effect answer-toggle-btn" data-target="practiceAnswerMaths">Reveal Step-by-Step Answer <i class='bx bx-chevron-down'></i></button>
+                
+                <div class="answer-toggle-content" id="practiceAnswerMaths">
+                    <div class="math-step">
+                        <div class="math-num" style="width:24px; height:24px; font-size: 0.8rem;">1</div>
+                        <div>
+                            <span>Expand the brackets:</span>
+                            <br><code style="background: rgba(0,0,0,0.5); padding: 0.2rem 0.5rem; border-radius: 4px;">2y - 8 = 10</code>
+                        </div>
+                    </div>
+                    <div class="math-step">
+                        <div class="math-num" style="width:24px; height:24px; font-size: 0.8rem;">2</div>
+                        <div>
+                            <span>Add 8 to both sides:</span>
+                            <br><code style="background: rgba(0,0,0,0.5); padding: 0.2rem 0.5rem; border-radius: 4px;">2y = 18</code>
+                        </div>
+                    </div>
+                    <div class="math-step">
+                        <div class="math-num" style="width:24px; height:24px; font-size: 0.8rem;">3</div>
+                        <div>
+                            <span>Divide by 2:</span>
+                            <br><strong style="font-size: 1.2rem;">y = <span class="answer-highlight">9</span></strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="glass-card reveal" style="text-align: center; margin-top: 3rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(15, 23, 42, 0.5)); border-color: rgba(16, 185, 129, 0.2);">
+                <h3 style="font-size: clamp(1.4rem, 4vw, 1.8rem); margin-bottom: 1rem;">Master Exam Concepts</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Stop struggling with equations in isolation.<br>Join the class where we break every problem down logically.</p>
+                <div class="hero-actions" style="margin-bottom: 0;">
+                    <a href="https://docs.google.com/forms/" target="_blank" class="btn btn-primary lg-btn tap-effect" style="background: linear-gradient(135deg, #10b981, #047857); box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);">Enroll in Maths <i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="https://chat.whatsapp.com/" target="_blank" class="btn btn-outline lg-btn tap-effect"><i class='bx bxl-whatsapp'></i> Ask a Question</a>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="academy.js"></script>
+</body>
+</html>
